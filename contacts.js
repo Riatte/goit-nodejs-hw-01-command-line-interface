@@ -13,7 +13,7 @@ async function getContactById(contactId) {
   const contact = data.find(({ id }) => id === contactId);
   return contact || "null";
 }
-getContactById("qdggE76Jtbfd9eWJHrssH");
+
 async function removeContact(contactId) {
   const data = await listContacts();
   const contact = data.findIndex(({ id }) => id === contactId);
